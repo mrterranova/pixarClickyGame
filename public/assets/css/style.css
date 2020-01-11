@@ -1,0 +1,299 @@
+@font-face {
+    font-family: Disney;
+    src: url("fonts/DansDisneyUi-x5Aq.ttf");
+}
+@font-face {
+    font-family: Cartoon;
+    src: url("fonts/Cartoonero.ttf");
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    min-height: 100vh;
+}
+
+body {
+    margin: 0;
+    background: radial-gradient(rgb(87, 43, 197), rgb(167, 255, 254))
+}
+
+nav {
+    background: rgb(207, 207, 44);
+    position: fixed;
+    width: 100%;
+    top:0;
+    z-index: 1;
+}
+.directions {
+    text-align: center;
+    font-family: Disney;
+    font-size: 1.8em;
+    padding-top: 5px;
+}
+.game-name {
+    font-size: 30px;
+    position: absolute;
+    font-family: Cartoon;
+    margin-left: 20px;
+    padding-top: 35px
+}
+
+.page-title {
+    margin-top: 70px;
+    padding-top: 20px;
+    color: whitesmoke;
+    text-shadow: -1px -1px 0 rgb(87, 117, 170), 1px -1px 0 rgb(87, 117, 170), -1px 1px 0 rgb(87, 117, 170), 1px 1px 0 rgb(87, 117, 170);
+    font-family: Disney, serif;
+    text-align: center;
+    font-weight: normal;
+    font-size: 4em;
+}
+.page-subTitle {
+    color: rgb(230, 233, 217);
+    font-family: Disney, serif;
+    text-align: center;
+    font-weight: normal;
+    font-size: 2.0em;
+}
+.pixar-logo {
+position: absolute;
+}
+
+.game-info-container {
+    float:right;
+    margin-right: 20px;
+}
+
+.game-info {
+    font-family: Cartoon, serif;
+    color: black;
+    font-size: 2em;
+}
+
+.game-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+    justify-content: center;
+    margin: 0 200px 0 200px;
+}
+.container {
+    height: 250px;
+    margin: -10px 0 0 0;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(11, 23, 151);
+}
+
+.card {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    overflow: hidden;
+    height: 150px;
+    width: 150px;
+    cursor: pointer;
+    margin: 15px;
+    border: 3px solid white;    
+    box-shadow: 2px 2px 2px 4px rgba(0, 0, 0, 0);
+    transition: box-shadow 100ms;
+}
+.card:hover {
+    box-shadow: 2px 2px 2px 8px rgba(0, 0, 0, 0.3); 
+}
+.card:active {
+    box-shadow: 2px 2px 2px 4px rgba(0, 0, 0, 0);
+}
+.card:hover .character{
+    animation: wave 2s linear infinite;
+}
+.character {
+    max-height: 120px;
+}
+
+@keyframes wave {
+    0%, 100% { transform: rotate(0); }
+    25% { transform: rotate(-10deg); }
+    75% { transform: rotate(10deg);}
+}
+.card-container {
+    padding: 20px;
+}
+.card-face {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backface-visibility: hidden;
+    border-radius: 7px;
+    transition: transform 500ms  ease-in-out;
+    transform: rotateY(180deg);
+    background: linear-gradient(rgb(207, 207, 136), rgb(255, 255, 255));
+    overflow: hidden;
+    padding: 5px;
+}
+
+.card.visible .card-front {
+    transform: rotateY(0);
+}
+.twinkle {
+    position: absolute;
+}
+.overlay {
+    position: absolute;
+    height: 220px;
+    width: 200px;
+    background: linear-gradient(rgba(207, 207, 136, 0.7), rgba(255, 255, 255, 0.7));
+}
+.character {
+    width: 170px;
+    position: relative;
+    bottom: 10px;
+}
+
+#character-name {
+    position: absolute;
+    font-family: Disney;
+    bottom: 1px;
+    font-size: 1.5em;
+    text-align: center;
+}
+.movie-reel {
+    position: absolute;
+    width: 75px;
+    height: 75px;
+}
+.reel {
+    transform: rotate(90deg);
+    position: absolute;
+    width:270px;
+}
+.movie-reel-top-left {
+    top: -35px;
+    left: -35px;
+}
+.movie-reel-top-right {
+    top: -35px;
+    right: -35px;
+}
+.movie-reel-bottom-left {
+    top: 103px;
+    left: -35px;
+}
+.movie-reel-bottom-right {
+    top: 103px;
+    right: -35px;
+}
+.card:hover .movie-reel-top-left {
+    animation: turn-right 10s linear infinite;
+}
+.card:hover .movie-reel-top-right {
+    animation: turn-left 10s linear infinite;
+}
+.card:hover .movie-reel-bottom-left {
+    animation: turn-right 10s linear infinite;
+}
+.card:hover .movie-reel-bottom-right {
+    animation: turn-left 10s linear infinite;
+}
+
+@keyframes turn-right {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(-360deg); }
+}
+
+@-webkit-keyframes turn-right {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(-360deg); }
+}
+
+@keyframes turn-left {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+@-webkit-keyframes turn-left {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.pixar-logo {
+    max-height: 200px;
+    margin-left: -100px;
+}
+
+footer {
+    width: 100%;
+    height: 70px;
+    background-color: rgb(207, 207, 44);
+    margin-top: 30px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#footer-right {
+    margin-left: 20%;
+    font-size: 30px;
+    font-family: Disney;
+}
+
+.final-screen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Disney;
+}
+
+.success-screen {
+    position: fixed;
+    margin-top: 6%;
+    color: green;
+    border-radius: 12px;
+    border: 2px solid white;
+    font-size: 3em;
+    width: 80vw;
+    height: 80vh;
+    background-color: rgba(230, 253, 211, 0.9);
+    z-index: 1;
+    text-align: center;
+
+}
+
+.fail-screen {
+    position: fixed;
+    margin-top:6%;
+    color: red;
+    border-radius: 12px;
+    border: 2px solid white;
+    font-size: 3em;
+    width:80vw;
+    height: 80vh;
+    background-color: rgba(255, 221, 215, 0.7);
+    z-index: 1;
+    text-align: center;
+}
+
+.startNew {
+    max-width: 40vw;
+    max-height: 40vh;
+    background: None;
+    overflow: hidden;
+    cursor: pointer;
+    border: none;
+}
+
+p {
+    font-size: 2em;
+    color:black;
+    justify-content: center;
+    font-family: Cartoon;
+}
