@@ -2,73 +2,61 @@
       {
             "id": 1,
             "characterName": "Dory",
-            "characterImage": "Dory.png",
-            "wasClicked": false
+            "characterImage": "Dory.png"
       },
       {
             "id": 2,
             "characterName": "Remy",
-            "characterImage": "Remy.png",
-            "wasClicked": false
+            "characterImage": "Remy.png"
       },
       {
             "id": 3,
             "characterName": "Merida",
-            "characterImage": "Merida.png",
-            "wasClicked": false
+            "characterImage": "Merida.png"
       },
       {
             "id": 4,
             "characterName": "Mr. Incredible",
-            "characterImage": "MrIncredible.png",
-            "wasClicked": false
+            "characterImage": "MrIncredible.png"
       },
       {
             "id": 5,
             "characterName": "Woody",
-            "characterImage": "Woody.png",
-            "wasClicked": false
+            "characterImage": "Woody.png"
       },
       {
             "id": 6,
             "characterName": "Joy",
-            "characterImage": "Joy.png",
-            "wasClicked": false
+            "characterImage": "Joy.png"
       },
       {
             "id": 7,
             "characterName": "Miguel",
-            "characterImage": "Miguel.png",
-            "wasClicked": false
+            "characterImage": "Miguel.png"
       },
       {
             "id": 8,
             "characterName": "Dug",
-            "characterImage": "Dug.png",
-            "wasClicked": false
+            "characterImage": "Dug.png"
       },
       {
             "id": 9,
             "characterName": "Sulley",
-            "characterImage": "Sulley.png",
-            "wasClicked": false
+            "characterImage": "Sulley.png"
       },
       {
             "id": 10,
             "characterName": "Wall-E",
-            "characterImage": "Wall-E.png",
-            "wasClicked": false
+            "characterImage": "Wall-E.png"
       },
       {
             "id": 11,
             "characterName": "Mike",
-            "characterImage": "Mike.png",
-            "wasClicked": false
+            "characterImage": "Mike.png"
       },
       {
             "id": 12,
             "characterName": "Marlin",
-            "characterImage": "Marlin.png",
-            "wasClicked": false
+            "characterImage": "Marlin.png"
       }   
 ]
