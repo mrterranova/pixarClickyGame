@@ -133,15 +133,11 @@ position: absolute;
     backface-visibility: hidden;
     border-radius: 7px;
     transition: transform 500ms  ease-in-out;
-    transform: rotateY(180deg);
     background: linear-gradient(rgb(207, 207, 136), rgb(255, 255, 255));
     overflow: hidden;
     padding: 5px;
 }
 
-.card.visible .card-front {
-    transform: rotateY(0);
-}
 .twinkle {
     position: absolute;
 }

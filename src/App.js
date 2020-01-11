@@ -12,17 +12,16 @@ class App extends Component {
     wasClicked: false,
     idArr: [],
     totalClicks: 1, 
-    isThere : false,
     highScore: 1
   }
 
 restartGame = () => {
   this.setState ({
     idArr : [],
-    totalClicks: 0
+    totalClicks: 1, 
 })
   console.log(this.state.idArr)
-  document.querySelector("#score").textContent = this.state.totalClicks
+  document.querySelector("#score").textContent = 0
 }
 
 
@@ -44,37 +43,40 @@ restartGame = () => {
   }
 
   clicked = (id) => {
-    console.log(this.state.idArr)
+  console.log("1",this.state.totalClicks,this.state.highScore )
     //adding up the total number of clicks
+    if (this.state.totalClicks >= this.state.highScore){
+    this.setState ({
+      highScore : this.state.totalClicks + 1
+    })
+    document.querySelector("#top-score").textContent = this.state.highScore
+  }
     this.setState({ totalClicks: this.state.totalClicks + 1});
-      document.querySelector("#score").textContent = this.state.totalClicks
-      if (this.state.totalClicks >= this.state.highScore){
-      this.setState ({
-        highScore : this.state.totalClicks + 1
-      })
-      document.querySelector("#top-score").textContent = this.state.highScore
+    document.querySelector("#score").textContent = this.state.totalClicks
+    document.querySelector(".directions").textContent = `Good guess! But don't click me again!`
+    console.log("2",this.state.totalClicks,this.state.highScore )
+    if (this.state.totalClicks === this.state.characters.length){
+      document.querySelector(".directions").textContent = `Congratulations! You won!`
+      this.restartGame()
     }
     //shuffle the cards
-    this.shuffle(this.state.characters);
-    document.querySelector(".directions").textContent = `Good guess! But don't click me again!`
-
-    let newArr; 
-
     this.state.idArr.map ( checkArr => {
       if (checkArr === id){
         document.querySelector(".directions").textContent = `Oh no! You clicked me already! Click to try again!`
-        this.setState ({ isThere : true})
-        newArr = [];
+        if (this.state.totalClicks >= (this.state.highScore)) {
+        document.querySelector("#top-score").textContent = this.state.highScore -1
+        this.setState ({
+          highScore : this.state.highScore - 1
+        })
+        }
+        console.log("3",this.state.totalClicks,this.state.highScore )
         this.restartGame()
-      }
+      } 
       return characters
     })
-    //collect the ids in an array
-    newArr = this.state.idArr.concat(id)
-    //changing the array
-    this.setState ({
-      idArr : newArr
-    })
+    this.shuffle(this.state.characters);
+    console.log("4",this.state.totalClicks,this.state.highScore )
+      this.state.idArr.push(id)
   }
 
   render() {
