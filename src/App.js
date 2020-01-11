@@ -21,7 +21,8 @@ restartGame = () => {
     idArr : [],
     totalClicks: 0
 })
-  document.querySelector("#score").textContent = 0
+  console.log(this.state.idArr)
+  document.querySelector("#score").textContent = this.state.totalClicks
 }
 
 
@@ -57,16 +58,19 @@ restartGame = () => {
     this.shuffle(this.state.characters);
     document.querySelector(".directions").textContent = `Good guess! But don't click me again!`
 
+    let newArr; 
+
     this.state.idArr.map ( checkArr => {
       if (checkArr === id){
         document.querySelector(".directions").textContent = `Oh no! You clicked me already! Click to try again!`
         this.setState ({ isThere : true})
+        newArr = [];
         this.restartGame()
       }
       return characters
     })
     //collect the ids in an array
-    const newArr = this.state.idArr.concat(id)
+    newArr = this.state.idArr.concat(id)
     //changing the array
     this.setState ({
       idArr : newArr
