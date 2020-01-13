@@ -8,12 +8,13 @@
     "react": "^15.5.4",
     "react-bootstrap": "^1.0.0-beta.16",
     "react-dom": "^15.5.4",
-    "react-scripts": "^1.0.0"
+    "react-scripts": "^1.0.0",
+    "gh-pages": "^2.0.1"
   },
   "devDependencies": {
     "react-scripts": "^1.0.0",
     "homepage": "https://mrterranova.github.io/pixarClickyGame/", 
-    "gh-page": "^2.0.1"
+    "gh-pages": "^2.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -21,6 +22,6 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-page -d build"
+    "deploy": "gh-pages -d build"
   }
 }
