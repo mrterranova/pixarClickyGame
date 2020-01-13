@@ -17,5 +17,5 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "homepage": "https://https://mrterranova.github.io/pixarClickyGame/"
+  "homepage": "https://mrterranova.github.io/pixarClickyGame/"
 }
