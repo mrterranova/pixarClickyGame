@@ -1,0 +1,20 @@
+[
+    {
+          "id": 1,
+          "name": "Simple",
+          "image": "Dory.png", 
+          "para": "Cone of Shame!"
+    },
+    {
+          "id": 2,
+          "name": "Normal",
+          "image": "Dory.png", 
+          "para": "Just Keep Swimming!"
+    },
+    {
+          "id": 4,
+          "name": "Challenge",
+          "image": "Dory.png", 
+          "para": "To Infinity and Beyond!"
+    }
+]

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Pixar Clicky Game</title>
+</head>
+
+<body>
+    <nav>
+        <div class="game-name">
+            Clicky Game
+        </div>
+        <div class="directions">
+            Click on an image to begin!
+        </div>
+        <div class="game-info-container game-info">
+            Score <span id="time-remaining">0</span> &nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;
+            Top Score <span id="time-remaining">0</span>
+        </div>
+    </nav>
+    <div class="container">
+        <h1 class="page-title">Pixar Fan Game</h1>
+        <h3 class="page-subTitle">Click on each character one time to win! But don't click a character twice!</h3>
+    </div>
+    <div class="final-screen">
+        <!-- <div class="success-screen">
+        <h1>Yippee!</h1>
+        <button class="startNew">
+            <p>Click the image to try again!</p>
+        <div class="win-image"><img src="assets/imgs/monster-success.gif" alt=""></div>
+    </button>
+    </div> -->
+        <!-- <div class="fail-screen">
+        <h1>Whah Wa!</h1>
+        <button class="startNew">
+            <p>Click the image to try again!</p>
+        <div class="fail-image"><img src="assets/imgs/incredibles-fail.gif" alt=""></div>
+        </button>  
+    </div> -->
+    </div>
+    <div class="game-container">
+        <div class="card visible">
+            <div class="card-front card-face">
+                <img src="assets/imgs/twinkle.gif" class="twinkle">
+                <div class="overlay"></div>
+                <img src="assets/imgs/movie-reel.png" alt="" class="reel">
+                <img class="movie-reel movie-reel-top-left" src="assets/imgs/movie-reel-color.png" alt="movie">
+                <img class="movie-reel movie-reel-top-right" src="assets/imgs/movie-reel-color.png" alt="movie">
+                <img class="character" src="assets/imgs/Sadness.png" alt="character">
+                <img class="movie-reel movie-reel-bottom-left" src="assets/imgs/movie-reel-color.png" alt="movie">
+                <img class="movie-reel movie-reel-bottom-right" src="assets/imgs/movie-reel-color.png" alt="movie">
+                <div id="character-name">Sadness</div>
+            </div>
+        </div>
+        <div class="card visible">
+            <div class="card-front card-face">
+                <img src="assets/imgs/twinkle.gif" class="twinkle">
+                <div class="overlay"></div>
+                <img src="assets/imgs/movie-reel.png" alt="" class="reel">
+                <img class="movie-reel movie-reel-top-left" src="assets/imgs/movie-reel-color.png" alt="movie">
+                <img class="movie-reel movie-reel-top-right" src="assets/imgs/movie-reel-color.png" alt="movie">
+                <img class="character" src="assets/imgs/Joy.png" alt="character">
+                <img class="movie-reel movie-reel-bottom-left" src="assets/imgs/movie-reel-color.png" alt="movie">
+                <img class="movie-reel movie-reel-bottom-right" src="assets/imgs/movie-reel-color.png" alt="movie">
+                <div id="character-name">Joy</div>
+            </div>
+        </div>
+        <div class="card visible">
+            <div class="card-front card-face">
+                <img src="assets/imgs/twinkle.gif" class="twinkle">
+                <div class="overlay"></div>
+                <img src="assets/imgs/movie-reel.png" alt="" class="reel">
+                <img class="movie-reel movie-reel-top-left" src="assets/imgs/movie-reel-color.png" alt="movie">
+                <img class="movie-reel movie-reel-top-right" src="assets/imgs/movie-reel-color.png" alt="movie">
+                <img class="character" src="assets/imgs/Marlin.png" alt="character">
+                <img class="movie-reel movie-reel-bottom-left" src="assets/imgs/movie-reel-color.png" alt="movie">
+                <img class="movie-reel movie-reel-bottom-right" src="assets/imgs/movie-reel-color.png" alt="movie">
+                <div id="character-name">Marlin</div>
+            </div>
+        </div>
+        <div class="card visible">
+            <div class="card-front card-face">
+                <img src="assets/imgs/twinkle.gif" class="twinkle">
+                <div class="overlay"></div>
+                <img src="assets/imgs/movie-reel.png" alt="" class="reel">
+                <img class="movie-reel movie-reel-top-left" src="assets/imgs/movie-reel-color.png" alt="movie">
+                <img class="movie-reel movie-reel-top-right" src="assets/imgs/movie-reel-color.png" alt="movie">
+                <img class="character" src="assets/imgs/Dory.png" alt="character">
+                <img class="movie-reel movie-reel-bottom-left" src="assets/imgs/movie-reel-color.png" alt="movie">
+                <img class="movie-reel movie-reel-bottom-right" src="assets/imgs/movie-reel-color.png" alt="movie">
+                <div id="character-name">Dory</div>
+            </div>
+        </div>
+        <div class="card visible">
+            <div class="card-front card-face">
+                <img src="assets/imgs/twinkle.gif" class="twinkle">
+                <div class="overlay"></div>
+                <img src="assets/imgs/movie-reel.png" alt="" class="reel">
+                <img class="movie-reel movie-reel-top-left" src="assets/imgs/movie-reel-color.png" alt="movie">
+                <img class="movie-reel movie-reel-top-right" src="assets/imgs/movie-reel-color.png" alt="movie">
+                <img class="character" src="assets/imgs/Linguini.png" alt="character">
+                <img class="movie-reel movie-reel-bottom-left" src="assets/imgs/movie-reel-color.png" alt="movie">
+                <img class="movie-reel movie-reel-bottom-right" src="assets/imgs/movie-reel-color.png" alt="movie">
+                <div id="character-name">Linguini</div>
+            </div>
+        </div>
+        <div class="card visible">
+            <div class="card-front card-face">
+                <img src="assets/imgs/twinkle.gif" class="twinkle">
+                <div class="overlay"></div>
+                <img src="assets/imgs/movie-reel.png" alt="" class="reel">
+                <img class="movie-reel movie-reel-top-left" src="assets/imgs/movie-reel-color.png" alt="movie">
+                <img class="movie-reel movie-reel-top-right" src="assets/imgs/movie-reel-color.png" alt="movie">
+                <img class="character" src="assets/imgs/Remy.png" alt="character">
+                <img class="movie-reel movie-reel-bottom-left" src="assets/imgs/movie-reel-color.png" alt="movie">
+                <img class="movie-reel movie-reel-bottom-right" src="assets/imgs/movie-reel-color.png" alt="movie">
+                <div id="character-name">Remy</div>
+            </div>
+        </div>
+        <div class="card visible">
+            <div class="card-front card-face">
+                <img src="assets/imgs/twinkle.gif" class="twinkle">
+                <div class="overlay"></div>
+                <img src="assets/imgs/movie-reel.png" alt="" class="reel">
+                <img class="movie-reel movie-reel-top-left" src="assets/imgs/movie-reel-color.png" alt="movie">
+                <img class="movie-reel movie-reel-top-right" src="assets/imgs/movie-reel-color.png" alt="movie">
+                <img class="character" src="assets/imgs/Buzz.png" alt="character">
+                <img class="movie-reel movie-reel-bottom-left" src="assets/imgs/movie-reel-color.png" alt="movie">
+                <img class="movie-reel movie-reel-bottom-right" src="assets/imgs/movie-reel-color.png" alt="movie">
+                <div id="character-name">Buzz</div>
+            </div>
+        </div>
+        <div class="card visible">
+            <div class="card-front card-face">
+                <img src="assets/imgs/twinkle.gif" class="twinkle">
+                <div class="overlay"></div>
+                <img src="assets/imgs/movie-reel.png" alt="" class="reel">
+                <img class="movie-reel movie-reel-top-left" src="assets/imgs/movie-reel-color.png" alt="movie">
+                <img class="movie-reel movie-reel-top-right" src="assets/imgs/movie-reel-color.png" alt="movie">
+                <img class="character" src="assets/imgs/Woody.png" alt="character">
+                <img class="movie-reel movie-reel-bottom-left" src="assets/imgs/movie-reel-color.png" alt="movie">
+                <img class="movie-reel movie-reel-bottom-right" src="assets/imgs/movie-reel-color.png" alt="movie">
+                <div id="character-name">Woody</div>
+            </div>
+        </div>
+        <div class="card visible">
+            <div class="card-front card-face">
+                <img src="assets/imgs/twinkle.gif" class="twinkle">
+                <div class="overlay"></div>
+                <img src="assets/imgs/movie-reel.png" alt="" class="reel">
+                <img class="movie-reel movie-reel-top-left" src="assets/imgs/movie-reel-color.png" alt="movie">
+                <img class="movie-reel movie-reel-top-right" src="assets/imgs/movie-reel-color.png" alt="movie">
+                <img class="character" src="assets/imgs/Miguel.png" alt="character">
+                <img class="movie-reel movie-reel-bottom-left" src="assets/imgs/movie-reel-color.png" alt="movie">
+                <img class="movie-reel movie-reel-bottom-right" src="assets/imgs/movie-reel-color.png" alt="movie">
+                <div id="character-name">Miguel</div>
+            </div>
+        </div>
+        <div class="card visible">
+            <div class="card-front card-face">
+                <img src="assets/imgs/twinkle.gif" class="twinkle">
+                <div class="overlay"></div>
+                <img src="assets/imgs/movie-reel.png" alt="" class="reel">
+                <img class="movie-reel movie-reel-top-left" src="assets/imgs/movie-reel-color.png" alt="movie">
+                <img class="movie-reel movie-reel-top-right" src="assets/imgs/movie-reel-color.png" alt="movie">
+                <img class="character" src="assets/imgs/Hector.png" alt="character">
+                <img class="movie-reel movie-reel-bottom-left" src="assets/imgs/movie-reel-color.png" alt="movie">
+                <img class="movie-reel movie-reel-bottom-right" src="assets/imgs/movie-reel-color.png" alt="movie">
+                <div id="character-name">Hector</div>
+            </div>
+        </div>
+        <div class="card visible">
+            <div class="card-front card-face">
+                <img src="assets/imgs/twinkle.gif" class="twinkle">
+                <div class="overlay"></div>
+                <img src="assets/imgs/movie-reel.png" alt="" class="reel">
+                <img class="movie-reel movie-reel-top-left" src="assets/imgs/movie-reel-color.png" alt="movie">
+                <img class="movie-reel movie-reel-top-right" src="assets/imgs/movie-reel-color.png" alt="movie">
+                <img class="character" src="assets/imgs/MrIncredible.png" alt="character">
+                <img class="movie-reel movie-reel-bottom-left" src="assets/imgs/movie-reel-color.png" alt="movie">
+                <img class="movie-reel movie-reel-bottom-right" src="assets/imgs/movie-reel-color.png" alt="movie">
+                <div id="character-name">Mr. Incredible</div>
+            </div>
+        </div>
+        <div class="card visible">
+            <div class="card-front card-face">
+                <img src="assets/imgs/twinkle.gif" class="twinkle">
+                <div class="overlay"></div>
+                <img src="assets/imgs/movie-reel.png" alt="" class="reel">
+                <img class="movie-reel movie-reel-top-left" src="assets/imgs/movie-reel-color.png" alt="movie">
+                <img class="movie-reel movie-reel-top-right" src="assets/imgs/movie-reel-color.png" alt="movie">
+                <img class="character" src="assets/imgs/Elastigirl.png" alt="character">
+                <div id="character-name">Elastigirl</div>
+                <img class="movie-reel movie-reel-bottom-left" src="assets/imgs/movie-reel-color.png" alt="movie">
+                <img class="movie-reel movie-reel-bottom-right" src="assets/imgs/movie-reel-color.png" alt="movie">
+            </div>
+        </div>
+        <div class="card visible">
+            <div class="card-front card-face">
+                <img src="assets/imgs/twinkle.gif" class="twinkle">
+                <div class="overlay"></div>
+                <img src="assets/imgs/movie-reel.png" alt="" class="reel">
+                <img class="movie-reel movie-reel-top-left" src="assets/imgs/movie-reel-color.png" alt="movie">
+                <img class="movie-reel movie-reel-top-right" src="assets/imgs/movie-reel-color.png" alt="movie">
+                <img class="character" src="assets/imgs/Wall-E.png" alt="character">
+                <img class="movie-reel movie-reel-bottom-left" src="assets/imgs/movie-reel-color.png" alt="movie">
+                <img class="movie-reel movie-reel-bottom-right" src="assets/imgs/movie-reel-color.png" alt="movie">
+                <div id="character-name">Wall-E</div>
+            </div>
+        </div>
+        <div class="card visible">
+            <div class="card-front card-face">
+                <img src="assets/imgs/twinkle.gif" class="twinkle">
+                <div class="overlay"></div>
+                <img src="assets/imgs/movie-reel.png" alt="" class="reel">
+                <img class="movie-reel movie-reel-top-left" src="assets/imgs/movie-reel-color.png" alt="movie">
+                <img class="movie-reel movie-reel-top-right" src="assets/imgs/movie-reel-color.png" alt="movie">
+                <img class="character" src="assets/imgs/Eva.png" alt="character">
+                <img class="movie-reel movie-reel-bottom-left" src="assets/imgs/movie-reel-color.png" alt="movie">
+                <img class="movie-reel movie-reel-bottom-right" src="assets/imgs/movie-reel-color.png" alt="movie">
+                <div id="character-name">Eva</div>
+            </div>
+        </div>
+        <div class="card visible">
+            <div class="card-front card-face">
+                <img src="assets/imgs/twinkle.gif" class="twinkle">
+                <div class="overlay"></div>
+                <img src="assets/imgs/movie-reel.png" alt="" class="reel">
+                <img class="movie-reel movie-reel-top-left" src="assets/imgs/movie-reel-color.png" alt="movie">
+                <img class="movie-reel movie-reel-top-right" src="assets/imgs/movie-reel-color.png" alt="movie">
+                <img class="character" src="assets/imgs/Sulley.png" alt="character">
+                <img class="movie-reel movie-reel-bottom-left" src="assets/imgs/movie-reel-color.png" alt="movie">
+                <img class="movie-reel movie-reel-bottom-right" src="assets/imgs/movie-reel-color.png" alt="movie">
+                <div id="character-name">Sulley</div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <img class="pixar-logo" src="assets/imgs/Pixar.png" alt="logo">
+        <span id="footer-right">A Fan Game</span>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.js"
+        integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI=" crossorigin="anonymous"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>

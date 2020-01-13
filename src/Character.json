@@ -1,0 +1,62 @@
+[
+      {
+            "id": 1,
+            "characterName": "Dory",
+            "characterImage": "Dory.png"
+      },
+      {
+            "id": 2,
+            "characterName": "Remy",
+            "characterImage": "Remy.png"
+      },
+      {
+            "id": 3,
+            "characterName": "Merida",
+            "characterImage": "Merida.png"
+      },
+      {
+            "id": 4,
+            "characterName": "Mr. Incredible",
+            "characterImage": "MrIncredible.png"
+      },
+      {
+            "id": 5,
+            "characterName": "Woody",
+            "characterImage": "Woody.png"
+      },
+      {
+            "id": 6,
+            "characterName": "Joy",
+            "characterImage": "Joy.png"
+      },
+      {
+            "id": 7,
+            "characterName": "Miguel",
+            "characterImage": "Miguel.png"
+      },
+      {
+            "id": 8,
+            "characterName": "Dug",
+            "characterImage": "Dug.png"
+      },
+      {
+            "id": 9,
+            "characterName": "Sulley",
+            "characterImage": "Sulley.png"
+      },
+      {
+            "id": 10,
+            "characterName": "Wall-E",
+            "characterImage": "Wall-E.png"
+      },
+      {
+            "id": 11,
+            "characterName": "Mike",
+            "characterImage": "Mike.png"
+      },
+      {
+            "id": 12,
+            "characterName": "Marlin",
+            "characterImage": "Marlin.png"
+      }
+]
