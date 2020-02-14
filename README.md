@@ -4,7 +4,7 @@ This is a ReactJS game to understand the basic principles of react.js. This is a
 
 Play the game here : https://mrterranova.github.io/pixarClickyGame/
 
-![alt text](/assets/imgs/layout.png)
+![alt text](public/assets/imgs/layout.png)
 ## Game Instructions
 
   When you open the page, it will automatically start you on "easy" level. You can upgrade your game play to "Normal" or "Challenge" each level means more character cards on the page.
