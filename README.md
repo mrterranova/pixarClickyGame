@@ -1,4 +1,4 @@
-# pixarClickyGame
+# Pixar Fan Clicky Game
 
 This is a ReactJS game to understand the basic principles of react.js. This is a simple game where react.js allows user to see real-time progress with fully rendered pages. The famous Pixar characters were borrowed. Note: This app was created entirely for educational purposes with no money being made from the app.
 
