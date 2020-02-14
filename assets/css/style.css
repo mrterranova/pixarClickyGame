@@ -322,3 +322,50 @@ p {
     justify-content: center;
     font-family: Cartoon;
 }
+@media only screen and (max-width: 560px) {
+    body {
+        margin: 0;
+        background-color: rgb(167, 255, 254);
+    }
+    .game-container {
+        margin: 0 10px 0 10px;
+    }
+    .container {
+        margin: 0 0 0 0;
+        width: 100%;
+        text-align: center;
+    }
+    .btnName {
+        font-size: 20px;
+    }
+    .card {
+        height: 90px;
+        width: 90px;
+    }
+    .character {
+        width: 70px;
+        bottom: 8px;
+    }
+    #character-name {
+        font-size: 1em;
+    }
+    .game-info-container {
+       text-align: center;
+    }
+    .directions {
+        font-size: 1.8em;
+        padding-top: 5px;
+    }
+    .game-name {
+        opacity: 0;
+    }
+    .page-title {
+        margin-top: 70px;
+        padding-top: 50px;
+        font-size: 3em;
+    }
+    .page-subTitle {
+        font-size: 1.5em;
+        padding: 5px;
+    }
+}
