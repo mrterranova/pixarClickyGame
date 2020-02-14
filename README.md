@@ -15,7 +15,7 @@ Play the game here : https://mrterranova.github.io/pixarClickyGame/
   
   Pick the level that best suits you!
   
-  You then click on a character to start the game. Make sure that you never click a character twice or you will lose and have to start over. Your score is recorded in the top right corner along with the Top Score. The Top Score changes in realtime if you beat the previous top score. There is no back-end attached to this project, so your Top Score is only temporarily saved. 
+  You then click on a character to start the game. Make sure that you never click a character twice or you will lose and have to start over. Your score is recorded in the top right corner along with the Top Score. The top score changes in realtime if you beat the previous top score. There is no back-end attached to this project, so your top score is only temporarily saved. 
   
 ## Technology 
 
