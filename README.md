@@ -25,3 +25,10 @@ Play the game here : https://mrterranova.github.io/pixarClickyGame/
 ## Creation of the project
 
   Project contains basic react.js principles of operating over arrays, saving over variables and organizing data into functions. ES6 principles are incorporated in this project. Please check out my App.js in order to see my work flow of how the app functions. 
+  
+ ## Deploying Project
+  To deploy this project locally be sure to: 
+  - fork repository and then clone the respository on local computer. 
+  - next go into the newly created file and open terminal. 
+  - type "npm install" inside the terminal to install node_modules. 
+  - since this is ReactJS, it should automatically open in the correct local port for you. If not, look inside the terminal and travel to the localhost: PORT that is written there. 
